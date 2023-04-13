@@ -2,7 +2,7 @@ const express = require('express');
 const Connection = require('./connection');
 const app = express();
 
-app.use(express.static(__dirname + '/public')); //Todos tus archivos html, css, js deben estar en una carpeta public
+app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

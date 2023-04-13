@@ -29,7 +29,7 @@ const checkNewPosts = async () => {
       console.log(newPost)
       postsContainer.insertBefore(createPost(newPost.rol, newPost.nombre, newPost.materia, newPost.contenido, newPost.fecha), postsContainer.firstChild)
     }
-    //checkNewPosts()
+    checkNewPosts()
 }
 
 const createPost = (rol, nombre, materia, contenido, fecha) => {
